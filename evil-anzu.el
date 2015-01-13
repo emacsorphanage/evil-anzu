@@ -100,6 +100,9 @@
 (define-globalized-minor-mode global-evil-anzu-mode evil-anzu-mode evil-anzu--turn-on
   :group 'evil-anzu)
 
+(defadvice evil-flash-hook (after reset-anzu-information activate)
+  (anzu--reset-status))
+
 (defadvice evil-search (before reset-anzu-information activate)
   (anzu--reset-status))
 
