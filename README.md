@@ -4,6 +4,10 @@
 
 evil-anzu is currently under development.
 
+## Screencast
+
+![evil-anzu](image/evil-anzu.gif)
+
 ## Configuration
 
 ```lisp
