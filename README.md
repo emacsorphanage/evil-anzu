@@ -1,12 +1,15 @@
-# evil-anzu
+# evil-anzu [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
 [anzu](https://github.com/syohex/emacs-anzu) for [evil-mode](https://gitorious.org/evil)
 
-evil-anzu is currently under development.
 
 ## Screencast
 
 ![evil-anzu](image/evil-anzu.gif)
+
+## Installation
+
+You can install evil-anzu.el from [MELPA](http://melpa.org) with package.el.
 
 ## Configuration
 
@@ -14,3 +17,8 @@ evil-anzu is currently under development.
 (define-key evil-motion-state-map "n" 'evil-anzu-search-next)
 (define-key evil-motion-state-map "N" 'evil-anzu-search-previous)
 ```
+
+[melpa-link]: http://melpa.org/#/evil-anzu
+[melpa-stable-link]: http://melpa.org/#/evil-anzu
+[melpa-badge]: http://melpa.org/packages/evil-anzu-badge.svg
+[melpa-stable-badge]: http://stable.melpa.org/packages/evil-anzu-badge.svg
