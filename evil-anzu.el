@@ -3,6 +3,7 @@
 ;; Copyright (C) 2015 by Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
+;; URL: https://github.com/syohex/emacs-evil-anzu
 ;; Version: 0.01
 ;; Package-Requires: ((evil "1.0.0") (anzu "0.46"))
 
