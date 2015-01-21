@@ -11,13 +11,6 @@
 
 You can install evil-anzu.el from [MELPA](http://melpa.org) with package.el.
 
-## Configuration
-
-```lisp
-(define-key evil-motion-state-map "n" 'evil-anzu-search-next)
-(define-key evil-motion-state-map "N" 'evil-anzu-search-previous)
-```
-
 [melpa-link]: http://melpa.org/#/evil-anzu
 [melpa-stable-link]: http://melpa.org/#/evil-anzu
 [melpa-badge]: http://melpa.org/packages/evil-anzu-badge.svg
