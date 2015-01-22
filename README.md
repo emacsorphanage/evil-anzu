@@ -11,6 +11,21 @@
 
 You can install evil-anzu.el from [MELPA](http://melpa.org) with package.el.
 
+## Configuration
+
+You can use `evil-anzu.el` only loading.
+
+```lisp
+;; Emacs 24.4 or higher
+(with-eval-after-load 'evil
+  (require 'evil-anzu))
+
+;; Emacs <= 24.3
+(eval-after-load 'evil
+  '(progn
+     (require 'evil-anzu)))
+```
+
 [melpa-link]: http://melpa.org/#/evil-anzu
 [melpa-stable-link]: http://melpa.org/#/evil-anzu
 [melpa-badge]: http://melpa.org/packages/evil-anzu-badge.svg
