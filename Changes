@@ -1,5 +1,8 @@
 Revision history for evil-anzu.el
 
+Revision 0.02 2015/01/25 fbergroth
+  - Support evil-search search module (GordonGustafson)
+
 Revision 0.02 2015/01/22 syohex
   - Implement more simply
   - Support all search commands
