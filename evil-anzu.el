@@ -33,9 +33,23 @@
   (let ((isearch-regexp regexp-p))
     (anzu--update string)))
 
+(defadvice evil-ex-find-next (after evil-anzu-compat (&optional pattern direction nowrap) activate)
+  "Make anzu work with the 'evil-search search module.
+If PATTERN is not specified the current global pattern `evil-ex-search-pattern' is used."
+  (anzu--cons-mode-line-search)
+  (let* ((isearch-regexp t)      ; all evil-ex searches are regexp searches
+         (current-pattern (or pattern evil-ex-search-pattern))
+         (regexp (evil-ex-pattern-regex current-pattern)))
+    (save-match-data            ; don't let anzu's searching mess up evil
+      (anzu--update regexp))))
+
 (defadvice evil-flash-hook (after evil-anzu-compat activate)
   ;; Prevent flickering, only run if timer is not active
   (unless (memq evil-flash-timer timer-list)
+    (anzu--reset-mode-line)))
+
+(defadvice evil-ex-delete-hl (after evil-anzu-compat (name) activate)
+  (when (eq name 'evil-ex-search)
     (anzu--reset-mode-line)))
 
 (provide 'evil-anzu)
