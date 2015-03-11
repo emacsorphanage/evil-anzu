@@ -27,6 +27,6 @@ You can use `evil-anzu.el` only loading.
 ```
 
 [melpa-link]: http://melpa.org/#/evil-anzu
-[melpa-stable-link]: http://melpa.org/#/evil-anzu
+[melpa-stable-link]: http://stable.melpa.org/#/evil-anzu
 [melpa-badge]: http://melpa.org/packages/evil-anzu-badge.svg
 [melpa-stable-badge]: http://stable.melpa.org/packages/evil-anzu-badge.svg
