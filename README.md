@@ -5,11 +5,11 @@
 
 ## Screencast
 
-![evil-anzu](image/evil-anzu.gif)
+![Screencast of evil-anzu](image/evil-anzu.gif)
 
 ## Installation
 
-You can install evil-anzu.el from [MELPA](http://melpa.org) with package.el.
+You can install evil-anzu.el from [MELPA](https://melpa.org) with package.el.
 
 ## Configuration
 
@@ -26,7 +26,7 @@ You can use `evil-anzu.el` only loading.
      (require 'evil-anzu)))
 ```
 
-[melpa-link]: http://melpa.org/#/evil-anzu
-[melpa-stable-link]: http://stable.melpa.org/#/evil-anzu
-[melpa-badge]: http://melpa.org/packages/evil-anzu-badge.svg
-[melpa-stable-badge]: http://stable.melpa.org/packages/evil-anzu-badge.svg
+[melpa-link]: https://melpa.org/#/evil-anzu
+[melpa-stable-link]: https://stable.melpa.org/#/evil-anzu
+[melpa-badge]: https://melpa.org/packages/evil-anzu-badge.svg
+[melpa-stable-badge]: https://stable.melpa.org/packages/evil-anzu-badge.svg
