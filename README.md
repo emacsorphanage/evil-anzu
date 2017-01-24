@@ -1,6 +1,6 @@
 # evil-anzu [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
-[anzu](https://github.com/syohex/emacs-anzu) for [evil-mode](https://gitorious.org/evil)
+[anzu](https://github.com/syohex/emacs-anzu) for [evil-mode](https://github.com/emacs-evil/evil)
 
 
 ## Screencast
