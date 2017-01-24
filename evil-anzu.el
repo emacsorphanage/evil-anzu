@@ -1,6 +1,6 @@
 ;;; evil-anzu.el --- anzu for evil-mode
 
-;; Copyright (C) 2015 by Syohei YOSHIDA
+;; Copyright (C) 2017 by Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 ;;         Fredrik Bergroth <fbergroth@gmail.com>
