@@ -60,6 +60,14 @@ If PATTERN is not specified the current global pattern `evil-ex-search-pattern' 
 (advice-add 'evil-flash-hook   :after #'evil-anzu-prevent-flicker)
 (advice-add 'evil-ex-delete-hl :after #'evil-anzu-reset)
 
+(defun evil-anzu-unload-function ()
+  "unload evil anzu"
+  (advice-remove 'evil-search       #'evil-anzu-start-search)
+  (advice-remove 'evil-ex-find-next #'evil-anzu-search-next)
+  (advice-remove 'evil-flash-hook   #'evil-anzu-prevent-flicker)
+  (advice-remove 'evil-ex-delete-hl #'evil-anzu-reset)
+  nil)
+
 (provide 'evil-anzu)
 
 ;;; evil-anzu.el ends here
