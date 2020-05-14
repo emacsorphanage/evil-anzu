@@ -29,9 +29,10 @@
 (require 'anzu)
 
 (defun evil-anzu-start-search (string forward &optional regexp-p start)
-  (when anzu-mode (anzu--cons-mode-line-search)
-        (let ((isearch-regexp regexp-p))
-          (anzu--update string))))
+  (when anzu-mode
+    (anzu--cons-mode-line-search)
+    (let ((isearch-regexp regexp-p))
+      (anzu--update string))))
 
 (defun evil-anzu-search-next (&optional pattern direction nowrap)
   "Make anzu work with the 'evil-search search module.
