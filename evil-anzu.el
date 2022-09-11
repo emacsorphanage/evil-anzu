@@ -35,8 +35,9 @@
       (anzu--update string))))
 
 (defun evil-anzu-search-next (&optional pattern direction nowrap)
-  "Make anzu work with the 'evil-search search module.
-If PATTERN is not specified the current global pattern `evil-ex-search-pattern' is used."
+  "Make anzu work with the \\='evil-search search module.
+If PATTERN is not specified the current global pattern
+`evil-ex-search-pattern' is used."
   (when anzu-mode
     (anzu--cons-mode-line-search)
     (let* ((isearch-regexp t) ; all evil-ex searches are regexp searches
