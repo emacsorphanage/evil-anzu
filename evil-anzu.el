@@ -29,10 +29,7 @@
 (require 'anzu)
 
 (defun evil-anzu-start-search (string forward &optional regexp-p start)
-  (when (and anzu-mode
-             (if evil-regexp-search
-                 (car-safe regexp-search-ring)
-               (car-safe search-ring)))
+  (when (and anzu-mode string)
     (anzu--cons-mode-line-search)
     (let ((isearch-regexp regexp-p))
       (anzu--update string))))
